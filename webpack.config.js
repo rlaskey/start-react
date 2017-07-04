@@ -18,6 +18,10 @@ module.exports = (env = {}) => new Object({
 			{
 				test: /\.jsx?$/,
 				loader: 'babel-loader'
+			},
+			{
+				test: /\.css$/,
+				use: [ 'style-loader', 'css-loader' ]
 			}
 		]
 	},
@@ -33,7 +37,8 @@ module.exports = (env = {}) => new Object({
 			});
 		},
 		new HtmlWebpackPlugin({
-			title: 'from RML3'
+			title: 'from RML3',
+			template: 'src/template.ejs'
 		})
 	]
 });
