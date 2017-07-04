@@ -1,5 +1,6 @@
 {
   "name": "rml3-react",
+  "license": "MPL-2.0",
   "version": "1.0.0",
   "scripts": {
     "build": "webpack -p --env.production",
