@@ -14,10 +14,10 @@ module.exports = (env = {}) => new Object({
 		path: path.resolve(__dirname, TARGET)
 	},
 	module: {
-		loaders: [
+		rules: [
 			{
 				test: /\.jsx?$/,
-				loader: 'babel-loader'
+				use: [ 'babel-loader' ]
 			},
 			{
 				test: /\.css$/,
